@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+
+.logo {
+  width: 80px;
+  cursor: pointer;
+  background-color: white;
+  height: 44px;
+  border-radius: 182px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.register-btn {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.container {
+  padding: 0 7%;
+}
+
+.container h1 {
+  text-align: center;
+  padding-top: 22%;
+  color: white;
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.search-bar {
+  background-color: white;
+  border-radius: 50px;
+  padding: 6px 10px 6px 30px;
+  margin: 30px auto;
+  width: 60%;
+}
+
+.search-bar form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form button {
+  background-color: #ff5361;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+}
+.search-bar form button img {
+  width: 15px;
+  margin-top: 7px;
+}
+
+/* .food-input {
+  flex: 1;
+} */
+
+/* ---------------exclusives---------------- */
+
+.sub-title {
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+
+.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.exclusives div img {
+   width: 100%;
+   height: 145px;
+   border-radius: 10px;
+}
+
+.exclusives div {
+   cursor: pointer;
+  position: relative;
+}
+
+.exclusives div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/* -------------------trending---------------------- */
+
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.trending img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 350px;
+}
+
+.trending h3 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* -----------------call to action---------------- */
+
+.cta {
+  margin: 80px 0;
+  background: linear-gradient(to right, #3f2321, transparent),
+    url(https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: white;
+}
+
+.cta h3 {
+  font-size: 4vw;
+  line-height: 5.3vw;
+  font-weight: 500;
+}
+
+.cta p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cta-btn {
+  background-color: #ff5361;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* -----------about-msg--------------------- */
+
+.about-msg {
+  text-align: center;
+  margin: 80px 0;
+  color: #333;
+  font-size: 17px;
+}
+
+.about-msg h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* --------footer----------------- */
+
+.footer {
+  margin: 80px 0 10px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #999;
+  margin: 0 10px;
+}
+
+.footer hr {
+  background: #999;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 20px 0;
+}
+
+.footer p {
+  padding-bottom: 15px;
+}
+
+.active{
+   position: relative;
+
+}
+
+.active::after{
+   content: '';
+   background: #fff;
+   width: 25px;
+   height: 2px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -12px;
+   border-radius: 2px;
+}
+
+
+/* --------------for small screen--------------- */
+
+@media only screen and (max-width: 700px) {
+   .logo{
+      position: fixed;
+      top: 4%;
+      left: 7%;
+   }
+
+   nav{
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      display: inline-block;
+      width: 100%;
+      padding: 100px 7% 0;
+      background: #000;
+      text-align: right;
+
+   }
+
+   nav .nav-links li{
+      margin: 10px 0;
+      display: block;
+
+   }
+   
+   .register-btn{
+      margin: 15px 0 30px;
+      display: inline-block;
+
+   }
+
+}
