@@ -83,10 +83,11 @@ nav {
 }
 
 .search-bar form input {
-  display: block;
+  display: flex;
   border: 0;
   outline: none;
   background: transparent;
+  width: 234px;
 }
 
 .search-bar form button {
@@ -101,10 +102,6 @@ nav {
 .search-bar form button img {
   width: 15px;
   margin-top: 7px;
-}
-
-.food-input {
-  flex: 1;
 }
 
 /* ---------------exclusives---------------- */
